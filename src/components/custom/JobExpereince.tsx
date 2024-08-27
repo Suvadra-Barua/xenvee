@@ -23,7 +23,7 @@ const JobExperience: React.FC<JobExperienceProps> = ({
   points,
 }) => {
   return (
-    <div className="flex items-start p-4 border rounded-lg shadow-sm bg-white my-4">
+    <div className="flex items-start p-4  bg-white my-4">
       <div className="text-xl font-bold text-gray-800 w-6">{jobNumber}</div>
       <div className="ml-4">
         <h3 className="text-xl font-semibold text-black">{jobTitle}</h3>

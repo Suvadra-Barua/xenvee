@@ -1,0 +1,22 @@
+.stats {
+  position: relative;
+}
+
+.statColumn {
+  h4 {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: var(--text-md);
+      font-weight: bold;
+      position: relative;
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.statGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

@@ -12,10 +12,12 @@ interface LinkData {
 }
 
 const linksData: LinkData[] = [
-  { href: "#about", label: "About", delay: 0.1, id: "about" },
-  { href: "#experience", label: "Exp.", delay: 0.2, id: "experience" },
-  { href: "#projects", label: "Projects", delay: 0.3, id: "projects" },
-  { href: "#contact", label: "Contact", delay: 0.4, id: "contact" },
+  { href: "#persona", label: "Persona", delay: 0.1, id: "personal" },
+  { href: "#professional-experience", label: "Professional <br/> Exp.", delay: 0.2, id: "#professional-experience" },
+  { href: "#publications-honors", label: "Publications <br/> & <br/> Honors", delay: 0.3, id: "publications-honors" },
+  { href: "#projects ", label: "Projects", delay: 0.4, id: "projects" },
+  { href: "#professional-development", label: "Professional <br/> Development ", delay: 0.5, id: "professional-development" },
+  { href: "#participation-presentations", label: "Participation <br/> & <br/> Presentations ", delay: 0.5, id: "participation-presentations" },
 ];
 
 const SideBar: React.FC = () => {
@@ -68,13 +70,13 @@ const SideBar: React.FC = () => {
 
   return (
     <motion.nav
-      className="hidden md:flex bg-[var(--background-dark)] text-white w-25 h-screen sticky top-0 left-0 z-20 flex-col items-center overflow-y-scroll scrollbar-hide"
+      className="hidden md:flex bg-earth-500 text-white w-25 h-screen sticky top-0 left-0 z-20 flex-col items-center overflow-y-scroll scrollbar-hide"
     >
-      <div className="flex-shrink-0 flex flex-col gap-1 text-xl font-bold leading-none w-11 h-11 align-center justify-center bg-[var(--background)] rounded my-7 px-2">
+      <div className="flex-shrink-0 flex flex-col gap-1 text-2xl font-bold leading-none w-11 h-11 align-center justify-center rounded my-4 px-2">
         &lt;/&gt;
         <span>
           SB
-          <span className="font-bold leading-none text-earth-500">.</span>
+          <span className="font-bold leading-none text-earth-800">.</span>
         </span>
       </div>
 

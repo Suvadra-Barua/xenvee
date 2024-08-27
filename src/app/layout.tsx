@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.className} md:grid md:grid-cols-[80px_1fr] bg-earth-100`}>
+      <body className={`${archivo.className} md:grid md:grid-cols-[120px_1fr] bg-earth-100`}>
         <SideBar/>
         {children}</body>
     </html>
