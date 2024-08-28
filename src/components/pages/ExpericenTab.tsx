@@ -1,11 +1,6 @@
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
-import JobFile from "./JobFile"
-import { SectionHeader } from "./SectionHeader";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import JobFile from "../custom/JobFile";
+import { SectionHeader } from "../custom/SectionHeader";
 
 export function ExpericenTab() {
   const professional_work = [
@@ -50,8 +45,7 @@ export function ExpericenTab() {
       logoUrl: "/lime.svg",
       start: "Aug 2019",
       end: "Oct 2019",
-      description:
-    ""    
+      description: "",
     },
   ];
   const teaching_Experince = [
@@ -83,55 +77,76 @@ export function ExpericenTab() {
 <li>Introduction to Computing & Programming Laboratory</li>
 <li>Web Programming Laboratory</li>`,
     },
-  ]
-  const volunteer_experience = [    {
-    company: "Ostad ",
-    badges: [],
-    href: "https://ostad.app/",
-    location: "Dhaka, Bangladesh",
-    title: "Lead Instructor",
-    logoUrl: "/shopify.svg",
-    start: "Aug 2023",
-    end: " Dec 2023",
-    description: `<li>Designed 90% of the comprehensive blockchain course module, covering fundamental to advanced concepts</li>
+  ];
+  const volunteer_experience = [
+    {
+      company: "Ostad ",
+      badges: [],
+      href: "https://ostad.app/",
+      location: "Dhaka, Bangladesh",
+      title: "Lead Instructor",
+      logoUrl: "/shopify.svg",
+      start: "Aug 2023",
+      end: " Dec 2023",
+      description: `<li>Designed 90% of the comprehensive blockchain course module, covering fundamental to advanced concepts</li>
 <li>Developed engaging and interactive course materials, including lectures, assignments, and hands-on projects</li>
 <li>Led 70% of the classes, delivering high-quality instruction to a diverse group of students</li>
 <li>Collaborated with other instructors and industry professionals to ensure course content was current and relevant</li>`,
-  },
-  {
-    company: "University of Creative Technology, Chittagong",
-    href: "https://nvidia.com/",
-    badges: [],
-    location: " Chattogram, Bangladesh",
-    title: "Lecturer",
-    logoUrl: "/nvidia.png",
-    start: "Jul 2022",
-    end: "Dec 2022",
-    description: `Completed coursework in:
+    },
+    {
+      company: "University of Creative Technology, Chittagong",
+      href: "https://nvidia.com/",
+      badges: [],
+      location: " Chattogram, Bangladesh",
+      title: "Lecturer",
+      logoUrl: "/nvidia.png",
+      start: "Jul 2022",
+      end: "Dec 2022",
+      description: `Completed coursework in:
 <li>Social and Professional Ethics in Computing</li>
 <li>Introduction to Computing & Programming Laboratory</li>
 <li>Web Programming Laboratory</li>`,
-  },]
+    },
+  ];
   return (
-    <section id="professional-experience" className="section-wrapper pt-16 md:pt-28  md:w-[80%]  md:mx-auto ">
-        <SectionHeader title="Experience" dir="l" />
-    <Tabs defaultValue="work-experince" className="text-sm md:text-base">
-      <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
-        <TabsTrigger value="work-experince" className=" rounded-full data-[state=active]:text-earth-500 "> Work</TabsTrigger>
-        <TabsTrigger value="teaching" className="rounded-full data-[state=active]:text-earth-500" >Teaching</TabsTrigger>
-        {/* <TabsTrigger value="pa" className="rounded-full data-[state=active]:text-earth-500" >Password</TabsTrigger> */}
-        <TabsTrigger value="volunteer" className="rounded-full data-[state=active]:text-earth-500" >Volunteer</TabsTrigger>
-      </TabsList>
-      <TabsContent value="work-experince">
-        <JobFile work={professional_work}/>
-      </TabsContent>
-      <TabsContent value="teaching">
-      <JobFile work={teaching_Experince}/>
-      </TabsContent>
-      <TabsContent value="volunteer">
-      <JobFile work={volunteer_experience}/>
-      </TabsContent>
-    </Tabs>
+    <section
+      id="professional-experience"
+      className="section-wrapper pt-16 md:pt-28 w-[90%] md:w-[80%] mx-auto "
+    >
+      <SectionHeader title="Professional Experience" dir="l" />
+      <Tabs defaultValue="work-experince" className="text-sm md:text-base">
+        <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
+          <TabsTrigger
+            value="work-experince"
+            className=" rounded-full data-[state=active]:text-earth-500 "
+          >
+            {" "}
+            Work
+          </TabsTrigger>
+          <TabsTrigger
+            value="teaching"
+            className="rounded-full data-[state=active]:text-earth-500"
+          >
+            Teaching
+          </TabsTrigger>
+          {/* <TabsTrigger value="pa" className="rounded-full data-[state=active]:text-earth-500" >Password</TabsTrigger> */}
+          <TabsTrigger
+            value="volunteer"
+            className="rounded-full data-[state=active]:text-earth-500"
+          >
+            Volunteer
+          </TabsTrigger>
+        </TabsList>
+        <TabsContent value="work-experince">
+          <JobFile work={professional_work} />
+        </TabsContent>
+        <TabsContent value="teaching">
+          <JobFile work={teaching_Experince} />
+        </TabsContent>
+        <TabsContent value="volunteer">
+          <JobFile work={volunteer_experience} />
+        </TabsContent>
+      </Tabs>
     </section>
-  )
+  );
 }

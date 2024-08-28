@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { SectionHeader } from "./SectionHeader";
+import { SectionHeader } from "../custom/SectionHeader";
 import BlurFade from "../ui/blur-fade";
 import parse from 'html-react-parser';
 const publications = [
@@ -35,31 +35,30 @@ Role: Team Leader`,
   `Winner | Kaptai Mathematical Olympiad, 2012`,
 ];
 const BLUR_FADE_DELAY = 0.04;
-const Prestige = () => {
+const InvitedTalks = () => {
   return (
     <section
-      id="prestige"
-      className="section-wrapper pt-16 md:pt-28  md:w-[80%]  md:mx-auto "
+      id="participation-presentations"
+      className="section-wrapper pt-16 md:pt-28 w-[90%] md:w-[80%]  mx-auto "
     >
-      <SectionHeader title="Prestige" dir="r" />
-      <Tabs defaultValue="publication" className="text-sm md:text-base">
+      <SectionHeader title="Participation & Presentations" dir="r" />
+      <Tabs defaultValue="extracurricular-activities" className="text-sm md:text-base">
         <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-2 bg-earth-500 text-white/50 rounded-full">
           <TabsTrigger
-            value="publication"
+            value="extracurricular-activities"
             className=" rounded-full data-[state=active]:text-earth-500 "
           >
             {" "}
-            Publication
+            Extracurricular Activities
           </TabsTrigger>
           <TabsTrigger
-            value="awards"
+            value="talks"
             className="rounded-full data-[state=active]:text-earth-500"
           >
-            Awards & Scholarship
-          </TabsTrigger>
+Invited Talks          </TabsTrigger>
         </TabsList>
-        <TabsContent value="publication">
-          <div className="w-full  flex flex-col gap-4">
+        <TabsContent value="extracurricular-activities">
+          <div className="w-full  flex flex-col gap-4 text-xs md:text-sm">
             {publications.map((publication, index) => (
               <BlurFade
                 key={publication.title}
@@ -77,8 +76,8 @@ const Prestige = () => {
             ))}
           </div>
         </TabsContent>
-        <TabsContent value="awards">
-          <div className="w-full  flex flex-col gap-4">
+        <TabsContent value="talks">
+          <div className="w-full  flex flex-col gap-4 text-xs md:text-sm">
             {awards.map((award, index) => (
               <BlurFade key={index} delay={BLUR_FADE_DELAY * 6 + index * 0.05}>
                 <div className="rounded-lg border text-card-foreground shadow-sm  p-4 bg-earth-50">
@@ -93,4 +92,4 @@ const Prestige = () => {
   );
 };
 
-export default Prestige;
+export default InvitedTalks;

@@ -1,5 +1,5 @@
 "use client"
-import { SectionHeader } from "./SectionHeader";
+import { SectionHeader } from "../custom/SectionHeader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import parse from "html-react-parser";
 import BlurFade from "../ui/blur-fade";
@@ -124,9 +124,9 @@ const Skills = () => {
   return (
     <section
       id="professional-development"
-      className="section-wrapper  mx-auto md:w-[80%]"
+      className="section-wrapper pt-16 md:pt-28 md:w-[80%] w-[90%] mx-auto"
     >
-      <SectionHeader title="Skills" dir="r" />
+      <SectionHeader title="Professional Development" dir="r" />
 
       <Tabs defaultValue="technical" className="text-sm md:text-base">
         <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
@@ -147,7 +147,7 @@ const Skills = () => {
             value="workshop"
             className="rounded-full data-[state=active]:text-earth-500"
           >
-            Training & Workshop
+            Training 
           </TabsTrigger>
         </TabsList>
         <TabsContent value="technical">

@@ -4,25 +4,22 @@ import { ReactNode } from "react";
 import BlurFade from "../ui/blur-fade";
 const HomeBanner = () => {
   return (
-    <div
-      className="flex flex-col md:flex-row mt-4 md:mt-16
-       w-[80%] mx-auto
-        gap-4 md:gap-0"
-      id="persona"
+    <section
+      className="section-wrapper flex flex-col lg:flex-row w-[90%] md:w-[80%] mx-auto gap-4 md:gap-0 lg:mb-16" id="persona"
     >
-      <div className="md:w-3/5 order-2 md:order-1 ">
+      <div className="lg:w-3/5 order-2 lg:order-1 ">
         <MyDetails />
       </div>
-      <div className="relative md:w-2/5 flex justify-end items-center order-1 md:order-2">
+      <div className="relative lg:w-2/5 flex justify-center lg:justify-end  items-center order-1 lg:order-2">
         <Image
-          className="rounded-full border-4 border-dotted border-black bg-earth-300 mt-20"
+          className="rounded-full border-4 border-dotted border-black bg-earth-300 md:mt-20"
           src="/Suvadra_cool.png"
           alt="Suvadra Barua"
           width={300}
           height={300}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -44,7 +41,7 @@ const TabDeatils: React.FC<StaticHeightBoxProps> = ({ children }) => {
 const MyDetails = () => {
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-bold my-2">
+      <h1 className="text-2xl md:text-4xl font-bold my-2 ">
         Hello, I'm Suvadra Barua
       </h1>
       <h4 className="text-lg md:text-xl font-semibold mb-4">
@@ -57,20 +54,20 @@ const MyDetails = () => {
         <TabsList className="grid w-full  my-4 md:w-3/4 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
           <TabsTrigger
             value="about-me"
-            className=" rounded-full data-[state=active]:text-earth-500 "
+            className=" rounded-full data-[state=active]:text-earth-500 text-sm "
           >
             {" "}
             About Me
           </TabsTrigger>
           <TabsTrigger
             value="research-agenda"
-            className="rounded-full data-[state=active]:text-earth-500"
+            className="rounded-full data-[state=active]:text-earth-500 text-sm -mx-2 md:mx-0"
           >
             Research Agenda
           </TabsTrigger>
           <TabsTrigger
             value="education"
-            className="rounded-full data-[state=active]:text-earth-500"
+            className="rounded-full data-[state=active]:text-earth-500 text-sm "
           >
             Education
           </TabsTrigger>

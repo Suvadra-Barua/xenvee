@@ -73,9 +73,6 @@ export const Project = ({
               <h4 className="font-bold text-lg flex-shrink-0 text-earth-700">{title}</h4>
               <div className="w-full h-px bg-text opacity-30" />
 
-              <Link className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={code} target="_blank" rel="nofollow">
-                <AiFillGithub color="#3c2e1e" size="1.8rem" />
-              </Link>
 
               <Link className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={projectLink} target="_blank" rel="nofollow">
                 <AiOutlineExport size="1.8rem" />

@@ -1,13 +1,16 @@
 import Contact from "@/components/custom/Contact";
-import { SectionHeader } from "./SectionHeader";
+import { SectionHeader } from "../custom/SectionHeader";
 
 export default function ContactSection() {
   return (
-    <section className=" mt-20 md:w-[80%] mx-auto">
-        <SectionHeader title="Contact" dir="r" />
+    <section
+      id="contact"
+      className="section-wrapper pt-16 md:pt-28 w-[90%] md:w-[80%] mx-auto "
+    >
+      <SectionHeader title="Contact" dir="r" />
       {/* <div className="grid md:grid-cols-2 place-items-center"> */}
       <div className="grid md:grid-cols-2">
-        <div className="h-fit pr-6 self-center">
+        <div className="h-fit self-center">
           <ul className="mb-6 md:mb-0">
             <li className="flex">
               <div className="flex h-10 w-10 items-center justify-center rounded bg-earth-500 text-gray-50">
@@ -63,11 +66,11 @@ export default function ContactSection() {
                   Contact
                 </h3>
                 <p className="text-gray-600 dark:text-slate-400">
-                  Mobile: +88 0152 132 7959
+                  Mobile: +88 0152 153 3288
                 </p>
-                <p className="text-gray-600 dark:text-slate-400">
+                {/* <p className="text-gray-600 dark:text-slate-400">
                   Mobile: +88 0176 123 9802
-                </p>
+                </p> */}
               </div>
             </li>
             <li className="flex">
@@ -96,14 +99,13 @@ export default function ContactSection() {
                   Email address
                 </h3>
                 <p className="text-gray-600 dark:text-slate-400">
-                  dipontalukder12@gmail.com
-                </p>
-                <p className="text-gray-600 dark:text-slate-400">
+                suvadrabarua21@gmail.com                </p>
+                {/* <p className="text-gray-600 dark:text-slate-400">
                   dipon@workera.ai
                 </p>
                 <p className="text-gray-600 dark:text-slate-400">
                   dipon.t@adjunct.eastdelta.edu.bd
-                </p>
+                </p> */}
               </div>
             </li>
           </ul>

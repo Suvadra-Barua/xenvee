@@ -1,9 +1,9 @@
 "use client";
-import { Project } from "./Project";
-import { SectionHeader } from "./SectionHeader";
+import { Project } from "../custom/Project";
+import { SectionHeader } from "../custom/SectionHeader";
 export const Projects = () => {
   return (
-    <section className="section-wrapper mt-48 w-[80%] mx-auto" id="projects">
+    <section className="section-wrapper pt-16 md:pt-28 md:w-[80%] w-[90%] mx-auto" id="projects">
       <SectionHeader title="Projects" dir="r" />
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 ">
         {projects.map((project) => {

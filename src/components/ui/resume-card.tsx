@@ -99,7 +99,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-base"
             >
                 <ul className="text-xs list-disc list-inside mt-1 space-y-1 text-gray-900 pr-3">
               {parse(description)}

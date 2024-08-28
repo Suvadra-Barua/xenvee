@@ -12,8 +12,8 @@ interface LinkData {
 }
 
 const linksData: LinkData[] = [
-  { href: "#persona", label: "Persona", delay: 0.1, id: "personal" },
-  { href: "#professional-experience", label: "Professional <br/> Exp.", delay: 0.2, id: "#professional-experience" },
+  { href: "#persona", label: "Persona", delay: 0.1, id: "persona" },
+  { href: "#professional-experience", label: "Professional <br/> Exp.", delay: 0.2, id: "professional-experience" },
   { href: "#prestige", label: "Prestige", delay: 0.3, id: "prestige" },
   { href: "#projects ", label: "Projects", delay: 0.4, id: "projects" },
   { href: "#professional-development", label: "Professional <br/> Development ", delay: 0.5, id: "professional-development" },
@@ -22,7 +22,7 @@ const linksData: LinkData[] = [
 ];
 
 const SideBar: React.FC = () => {
-  const [selected, setSelected] = useState<string>("");
+  const [selected, setSelected] = useState<string>("persona");
 
   const handleClick = (id: string) => {
     const targetElement = document.getElementById(id);
@@ -54,6 +54,7 @@ const SideBar: React.FC = () => {
 
     const callback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
+        // console.log(`${entry.target.id} is `,entry.isIntersecting);
         if (entry.isIntersecting) {
           setSelected(entry.target.id);
         }
@@ -69,6 +70,7 @@ const SideBar: React.FC = () => {
     };
   }, []);
 
+  console.log(selected);
   return (
     <motion.nav
       className="hidden md:flex bg-earth-500 text-white w-25 h-screen sticky top-0 left-0 z-20 flex-col items-center overflow-y-scroll scrollbar-hide"
