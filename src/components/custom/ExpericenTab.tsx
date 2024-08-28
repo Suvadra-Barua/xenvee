@@ -3,7 +3,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/ui/tabs"
+} from "@/components/ui/tabs";
 import JobFile from "./JobFile"
 import { SectionHeader } from "./SectionHeader";
 
@@ -113,7 +113,7 @@ export function ExpericenTab() {
 <li>Web Programming Laboratory</li>`,
   },]
   return (
-    <div id="professional-experience" className="section-wrapper pt-16 md:pt-28  md:w-[80%]  md:mx-auto ">
+    <section id="professional-experience" className="section-wrapper pt-16 md:pt-28  md:w-[80%]  md:mx-auto ">
         <SectionHeader title="Experience" dir="l" />
     <Tabs defaultValue="work-experince" className="text-sm md:text-base">
       <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
@@ -132,6 +132,6 @@ export function ExpericenTab() {
       <JobFile work={volunteer_experience}/>
       </TabsContent>
     </Tabs>
-    </div>
+    </section>
   )
 }

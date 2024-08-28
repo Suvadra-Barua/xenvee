@@ -14,10 +14,11 @@ interface LinkData {
 const linksData: LinkData[] = [
   { href: "#persona", label: "Persona", delay: 0.1, id: "personal" },
   { href: "#professional-experience", label: "Professional <br/> Exp.", delay: 0.2, id: "#professional-experience" },
-  { href: "#publications-honors", label: "Publications <br/> & <br/> Honors", delay: 0.3, id: "publications-honors" },
+  { href: "#prestige", label: "Prestige", delay: 0.3, id: "prestige" },
   { href: "#projects ", label: "Projects", delay: 0.4, id: "projects" },
   { href: "#professional-development", label: "Professional <br/> Development ", delay: 0.5, id: "professional-development" },
   { href: "#participation-presentations", label: "Participation <br/> & <br/> Presentations ", delay: 0.5, id: "participation-presentations" },
+  { href: "#contact", label: "Contact ", delay: 0.5, id: "contact" },
 ];
 
 const SideBar: React.FC = () => {
@@ -79,7 +80,7 @@ const SideBar: React.FC = () => {
           <span className="font-bold leading-none text-earth-800">.</span>
         </span>
       </div>
-
+      <div className="flex flex-col gap-4">
       {linksData.map((link) => (
         <SidebarLink
           key={link.id}
@@ -93,6 +94,7 @@ const SideBar: React.FC = () => {
           }}
         />
       ))}
+      </div>
     </motion.nav>
   );
 };
