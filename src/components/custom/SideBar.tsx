@@ -17,8 +17,8 @@ const linksData: LinkData[] = [
   { href: "#prestige", label: "Prestige", delay: 0.3, id: "prestige" },
   { href: "#projects ", label: "Projects", delay: 0.4, id: "projects" },
   { href: "#professional-development", label: "Professional <br/> Development ", delay: 0.5, id: "professional-development" },
-  { href: "#participation-presentations", label: "Participation <br/> & <br/> Presentations ", delay: 0.5, id: "participation-presentations" },
-  { href: "#contact", label: "Contact ", delay: 0.5, id: "contact" },
+  { href: "#participation-presentations", label: "Participation <br/> & <br/> Presentations ", delay: 0.6, id: "participation-presentations" },
+  { href: "#contact", label: "Contact ", delay: 0.7, id: "contact" },
 ];
 
 const SideBar: React.FC = () => {

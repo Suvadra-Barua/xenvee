@@ -5,12 +5,17 @@ import { OutlineButton } from "@/components/custom/OutlineButton";
 const Heading = () => {
   return (
     <header
-      className={` p-4 md:px-14 flex items-center justify-between sticky top-0 z-20 bg-[#11111120] backdrop-blur-md font-bold h-16`}
+      className={`px-2 lg:px-14 flex items-center justify-between sticky top-0 z-20 bg-[#11111120] backdrop-blur-md font-bold h-14 md:h-16`}
     >
       <MyLinks />
-      <OutlineButton onClick={() => window.open("/fake_resume.pdf")}>
+      <div className="flex gap-2 items-center mt-1.5 md:mt-0" >
+      <OutlineButton onClick={() => window.open("https://docs.google.com/document/d/1S3fzWi2buW3EEXoMcTpjvYUi4ryt_2xBLgOc5PsDZI8/edit?usp=sharing")}>
         My resume
       </OutlineButton>
+      <OutlineButton onClick={() => window.location.href = '/#contact'}>
+        Contact
+      </OutlineButton>
+      </div>
     </header>
   );
 };

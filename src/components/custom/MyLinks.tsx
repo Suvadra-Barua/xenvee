@@ -9,19 +9,19 @@ import { motion } from "framer-motion";
 const links = [
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillLinkedin  size='2rem'/>
+    icon: <AiFillLinkedin  className="size-6  md:size-8  lg:size-10 "/>
   },
   {
     link:"https://www.github.com",
-    icon: <AiFillGithub size='2rem'/>
+    icon: <AiFillGithub className="size-6  md:size-8  lg:size-10"/>
   },
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillTwitterCircle size='2rem'/>
+    icon: <AiFillTwitterCircle className="size-6  md:size-8  lg:size-10"/>
   },
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillCodepenCircle size='2rem'/>
+    icon: <AiFillCodepenCircle className="size-6  md:size-8  lg:size-10"/>
   },
 
 ];
