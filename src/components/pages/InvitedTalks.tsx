@@ -11,12 +11,18 @@ const InvitedTalks = () => {
       id="participation-presentations"
       className="section-wrapper pt-16 md:pt-28 w-[90%] md:w-[80%]  mx-auto "
     >
-      <SectionHeader title="Participation & Presentations" dir="r" />
+      <SectionHeader title="Participation" dir="r" />
       <Tabs
         defaultValue="extracurricular-activities"
         className="text-sm md:text-base"
       >
         <TabsList className="grid w-full  my-4 md:w-1/2 mx-auto grid-cols-2 bg-earth-500 text-white/50 rounded-full">
+        <TabsTrigger
+            value="talks"
+            className="rounded-full data-[state=active]:text-earth-500"
+          >
+            Invited Talks{" "}
+          </TabsTrigger>
           <TabsTrigger
             value="extracurricular-activities"
             className=" rounded-full data-[state=active]:text-earth-500 "
@@ -24,12 +30,7 @@ const InvitedTalks = () => {
             {" "}
             Extracurricular Activities
           </TabsTrigger>
-          <TabsTrigger
-            value="talks"
-            className="rounded-full data-[state=active]:text-earth-500"
-          >
-            Invited Talks{" "}
-          </TabsTrigger>
+          
         </TabsList>
         <TabsContent value="extracurricular-activities">
           <div className="w-full  flex flex-col gap-4 text-xs md:text-sm">
@@ -41,10 +42,10 @@ const InvitedTalks = () => {
                 <div className="rounded-lg border text-card-foreground shadow-sm  p-4 bg-earth-50">
                   <h3 className="font-bold">{publication.title}</h3>
                   <div className="font-medium">{publication.authors}</div>
-                  <div className="">
+                  {/* <div className="">
                     {publication.journal}, {publication.year}{" "}
                   </div>
-                  <div className="">{publication.doi}</div>
+                  <div className="">{publication.doi}</div> */}
                 </div>
               </BlurFade>
             ))}

@@ -38,7 +38,7 @@ const Skills = () => {
             className=" rounded-full data-[state=active]:text-earth-500 "
           >
             {" "}
-            Technical
+            Technical Skills
           </TabsTrigger>
           <TabsTrigger
             value="courses"

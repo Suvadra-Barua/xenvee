@@ -1,84 +1,90 @@
 const allSkills = [
     {
-      title: "Blockchain ",
+      title: "Blockchain Development",
       skills: [
         { label: "Language", value: "Solidity" },
         { label: "Framework", value: "Truffle, Hardhat, Foundry" },
         { label: "Library", value: "OpenZeppelin, PRBMath" },
-        {
-          label: "Others",
-          value: "Remix, Metamask, Infura, Minipay, Custodial Wallet(DFNS)",
-        },
         { label: "Chain", value: "Ethereum, Celo, Polygon" },
-      ],
-    },
-    {
-      title: "Core Concepts",
-      skills: [
-        { label: "Consensus Algorithms", value: "PoW, PoS, PBFT" },
-        { label: "", value: ["Cryptocurrency, Defi, NFT"] },
-        { label: "", value: ["Smart Contract Security"] },
-        { label: "", value: ["OOP"] },
+        { label: "Oracle", value: "Chainlink, Provable" },
+        { label: "Others", value: "Remix, Metamask, Custodial, Wallet (DFNS, Fireblocks), Minipay" },
       ],
     },
     {
       title: "Web Development",
       skills: [
-        { label: "Problem Solving", value: "C, Python" },
-        { label: "Language", value: "HTML, CSS, JavaScript, Python" },
+        { label: "Language", value: "HTML, CSS, JavaScript" },
         { label: "Front-end", value: "React, Next.js" },
-        { label: "Back-end", value: "Express" },
+        { label: "Back-end", value: "Express, Flask" },
         { label: "Testing", value: "Jest, Mocha, Chai" },
         { label: "Database", value: "PostgreSQL" },
-        { label: "Version Control", value: "Github" },
       ],
     },
     {
-      title: "Blockchain Oracle",
-      skills: [{ label: "", value: ["Chainlink", "Provable"] }],
+      title: "Fields",
+      skills: [
+        { label: "", value: "Blockchain" },
+        { label: "", value: ["Cryptography"] },
+        { label: "", value: ["Web Development"] },
+        { label: "", value: ["Machine Learning"] },
+      ],
     },
     {
       title: "Decentralized Storage",
-      skills: [{ label: "", value: ["IPFS", "Ceramic"] }],
+      skills: [{ label: "", value: ["IPFS"] },{ label: "", value: ["Ceramic"] }],
+    },
+    {
+      title: "Others",
+      skills: [{ label: "Problem Solving", value: ["C, Python"] },{ label: "Version Control", value: ["Github"] }],
     },
     {
       title: "Project Management",
-      skills: [{ label: "", value: ["Atlassian Jira & Trello", "Asana"] }],
+      skills: [{ label: "", value: ["Atlassian Jira & Trello"] },{ label: "", value: ["Asana"] }],
     },
   ];
   const OnlineCourses = [
     {
       title:
-        "Reinforcement Learning Specialization - <i>University of Alberta (Online)</i>",
-      link: "",
-    },
-    {
-      title: "Machine Learning - <i>Stanford University (Online)</i>",
+        " Interactivity with JavaScript | <i> University of Michigan (Online)</i>",
       link: "",
     },
     {
       title:
-        "Deep Learning Specialization - <i>Deep Learning Specialization</i>",
+        "Algorithmic Tool Box | <i>University of California San Diego (Online)</i>",
       link: "",
     },
     {
       title:
-        "TensorFlow Data and Deployment Specialization - <i>DeepLearning.ai</i>",
+        "Python Data Structures | University of Michigan (Online) <i>University of Michigan (Online)</i>",
+      link: "",
+    },
+    {
+      title: "Blockchain: Foundations and Use Cases | <i>ConsenSys Academy (Online)</i>",
       link: "",
     },
     {
       title:
-        "DeepLearning.AI TensorFlow Developer Specialization - <i>DeepLearning.ai</i>",
+        "Blockchain Basics | <i>University at Buffalo(Online)</i>",
       link: "",
     },
     {
       title:
-        "Introduction to Quantum Computing, - <i>2020 Qiskit Global Summer School, IBM Qiskit</i>",
+        "Smart Contract | <i>| University at Buffalo(Online)</i>",
+      link: "",
+    },
+    {
+      title:
+        "Decentralized Applications (DAPPs) | <i>University at Buffalo (Online) </i>",
       link: "",
     },
   ];
 
   const trainingWorkShop = [
+    {
+      content: "Android Control Robot - IEEE",
+      year: "2017",
+      url: "",
+    },
     {
       content:
         "Cisco CCNA Exploration 1 - IICT, Chittagong University of Engineering & Technology",
@@ -86,13 +92,25 @@ const allSkills = [
       url: "",
     },
     {
+      content: "Workshop on Blockchain - IEEE",
+      year: "2018",
+      url: "",
+    },
+    {
       content:
-        "Machine Learning, Deep Learning and Artificial Intelligence with Python  Bangladesh Hi-Tech Park Authority",
+        "Training on Blockchain - ICT Ministry and Hi-Tech Park Authority of Bangladesh",
       year: "2019",
       url: "",
     },
     {
-      content: "Ethical Hacking and Blockchain, IEEE CUETSB",
+      content:
+        "Workshop on Ethical Hacking - ICT Ministry and Hi-Tech Park Authority of Bangladesh",
+      year: "2019",
+      url: "",
+    },
+    {
+      content:
+        "Foundations in Digital Forensic  - ICT Ministry and Hi-Tech Park Authority of Bangladesh",
       year: "2019",
       url: "",
     },

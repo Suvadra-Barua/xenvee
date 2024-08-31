@@ -1,34 +1,35 @@
 const ECActivites = [
     {
       title:
-        "A Blockchain based Decentralized Video Streaming Platform with Content Protection System",
-      authors: "Suvadra Barua, Dipon Talukder",
-      journal:
-        "23rd International Conference on Computer and Information Technology (ICCIT)",
-      year: 2020,
-      doi: "10.1109/ICCIT51783.2020.9392746",
+        "Mime Artist,CUET Debating Society",
+      authors: `Performed Mime acts for audiences at International Mime Fest 2017 at the Dhaka University,
+             Collaborated with other artists to create engaging performances`
+    },
+    {
+      title:`Volunteer, National High School Programming Contest-2016`,
+      authors:`Reviewed and verified programming exam submissions for accuracy and adherence to contest rules,
+Checked and validated answers against expected results to ensure correctness and fairness in scoring,
+Collaborated with other team members to resolve any discrepancies or issues in submitted solutions.`
     },
     {
       title:
-        "OkkhorNama: BdSL Image Dataset For Real Time Object Detection Algorithms",
-      authors: "Dipon Talukder, Fatima Jahara, Suvadra Barua, Md. Mokammel Haque",
-      journal: "IEEE Region 10 Symposium (TENSYMP)",
-      year: 2021,
-      doi: "10.1109/TENSYMP52854.2021.9550907",
+        "Member, Organizing Committee for Cultural Events, CUET CSE Fest , 2020",
+      authors: `Collaborated with team members to plan and execute successful events,Assisted in promoting the events through social media, posters, word-of-mouth, etc.`
     },
-    // Add more publications as needed
+    {
+      title:
+        "Member,CUET Film Society",
+      authors: ""
+    },
   ];
   const InvitedTalksData = [
-    `<div><b>Silver Award | Professional Category | Blockchain Olympiad Bangladesh, 2022 ⇗</b>'
-  <div>Project : AttoEarth - Solving Land Disputes at a High Precision</div>
-  Role: Blockchain Engineer</div>`,
-    `Bronze Award | Student Category | Blockchain Olympiad Bangladesh, 2021 ⇗
-  Project : TrioChain -  A Blockchain Based Passport Management System for Bangladesh
-  Role: Team Leader`,
-    `Merit Award | Student Category | International  Blockchain Olympiad Bangladesh, 2021`,
-    `Technical Scholarship | Chittagong University of Engineering and Technology (CUET) ,2014-2018`,
-    `Secondary School Certificate (SSC) Scholarship Award | Bangladesh Education Board, 2013-2015 ⇗`,
-    `Winner | Kaptai Mathematical Olympiad, 2012`,
+    `<div><b>A Roadshow To Blockchain Olympiad Bangladesh Webinar</b>
+  <div>Varendra University || 2022</div>
+  </div>`,
+    `<div><b>All About Blockchain Olympiad Webinar</b>
+  <div>CUET Computer Club || 2022</div>
+  </div>`,
+    
   ];
 const InvitedTalksPageData = {
     ECActivites,InvitedTalksData

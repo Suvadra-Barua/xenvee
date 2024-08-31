@@ -1,9 +1,9 @@
 const professional_work = [
     {
-      company: "Tero Labs LLC",
+      company: "Universal Machine Inc.",
       href: "https://atomic.finance",
       badges: [],
-      location: "Santa Carla, USA",
+      location: "Silicon Valley, California",
       title: "Blockchain Engineer",
       logoUrl: "/atomic.png",
       start: "November 2021",
@@ -17,7 +17,20 @@ const professional_work = [
 <li>Proposed architectural improvements in blockchain projects</li>
 <li>Audited & assessed smart contracts for adherence to security standards (SWC Registry)</li>
 <li>Designed & developed crypto accounting application for Celo with multiple wallet integrations</li>
-<li>Conducted a research study on 20 L1 & 11 L2 chains based on 10 criterias including DEX, TPS, etc</li>`,
+<li>Engaged in full-stack development (frontend, backend, and Web3), demonstrating versatility and a commitment to mastering new technologies in the blockchain space.</li>`,
+    },
+    {
+      company: "Creative Crowdfunding Protocol",
+      href: "https://splunk.com",
+      badges: [],
+      location: "USA",
+      title: "Software Engineer",
+      logoUrl: "/splunk.svg",
+      start: "Nov 2023 ",
+      end: "Running",
+      description: `<li>Conducted research on various on-ramp and off-ramp platforms to select the most suitable one for our project</li>
+<li>Tested smart contracts and implemented a frontend for demonstration purposes</li>
+<li>Developed the backend for the wallet service, providing APIs for operations related to custodial wallets</li>`,
     },
     {
       company: "Silicon Orchard Ltd.",
@@ -47,7 +60,7 @@ const professional_work = [
     {
       company: "Ostad ",
       badges: [],
-      href: "https://ostad.app/",
+      href: "https://ostad.app/en/course/blockchain-development",
       location: "Dhaka, Bangladesh",
       title: "Lead Instructor",
       logoUrl: "/shopify.svg",
@@ -60,9 +73,9 @@ const professional_work = [
     },
     {
       company: "University of Creative Technology, Chittagong",
-      href: "https://nvidia.com/",
+      href: "https://www.uctc.edu.bd/cse",
       badges: [],
-      location: " Chattogram, Bangladesh",
+      location: "Chattogram, Bangladesh",
       title: "Lecturer",
       logoUrl: "/nvidia.png",
       start: "Jul 2022",
@@ -71,36 +84,43 @@ const professional_work = [
 <li>Social and Professional Ethics in Computing</li>
 <li>Introduction to Computing & Programming Laboratory</li>
 <li>Web Programming Laboratory</li>`,
+    },
+    {
+      company: "CUET Computer Club",
+      href: "https://nvidia.com/",
+      badges: [],
+      location: " Chattogram, Bangladesh",
+      title: "Workshop Instructor",
+      logoUrl: "/nvidia.png",
+      start: "Jul 2022",
+      end: "Dec 2022",
+      description: `
+<li>Instructed over 40 students in a three-day session titled ‘All About Blockchain & Smart Contract Development with Solidity’</li>`,
+    },
+    {
+      company: "KolpoKoushol",
+      href: "https://kolpokoushol.org/",
+      badges: [],
+      location: "Dhaka, Bangladesh",
+      title: "Mentor",
+      logoUrl: "/nvidia.png",
+      start: "Oct 2023 ",
+      end: "",
+      description: `
+<li>Guided mentees in web development, smart contract implementation, and transforming ideas into projects</li>`,
     },
   ];
   const volunteer_experience = [
     {
-      company: "Ostad ",
+      company: "World Blockchain Organization",
       badges: [],
-      href: "https://ostad.app/",
-      location: "Dhaka, Bangladesh",
-      title: "Lead Instructor",
+      href: "",
+      location: "",
+      title: "Editor",
       logoUrl: "/shopify.svg",
-      start: "Aug 2023",
-      end: " Dec 2023",
-      description: `<li>Designed 90% of the comprehensive blockchain course module, covering fundamental to advanced concepts</li>
-<li>Developed engaging and interactive course materials, including lectures, assignments, and hands-on projects</li>
-<li>Led 70% of the classes, delivering high-quality instruction to a diverse group of students</li>
-<li>Collaborated with other instructors and industry professionals to ensure course content was current and relevant</li>`,
-    },
-    {
-      company: "University of Creative Technology, Chittagong",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: " Chattogram, Bangladesh",
-      title: "Lecturer",
-      logoUrl: "/nvidia.png",
-      start: "Jul 2022",
-      end: "Dec 2022",
-      description: `Completed coursework in:
-<li>Social and Professional Ethics in Computing</li>
-<li>Introduction to Computing & Programming Laboratory</li>
-<li>Web Programming Laboratory</li>`,
+      start: "Sep 2020",
+      end: "Dec 2020",
+      description: ``,
     },
   ];
 
