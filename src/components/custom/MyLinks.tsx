@@ -4,24 +4,26 @@ import {
   AiFillTwitterCircle,
   AiFillCodepenCircle,
 } from "react-icons/ai";
+import { SiGithub, SiGooglescholar,SiLeetcode, SiLinkedin  } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 const links = [
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillLinkedin  className="size-6  md:size-8  lg:size-10 "/>
+    icon: <SiLinkedin  className="size-4  md:size-6  lg:size-8 "/>
   },
   {
     link:"https://www.github.com",
-    icon: <AiFillGithub className="size-6  md:size-8  lg:size-10"/>
+    icon: <SiLeetcode className="size-4  md:size-6  lg:size-8 "/>
   },
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillTwitterCircle className="size-6  md:size-8  lg:size-10"/>
+    icon: <SiGithub className="size-4  md:size-6  lg:size-8 "/>
   },
   {
     link:"https://www.linkedin.com",
-    icon: <AiFillCodepenCircle className="size-6  md:size-8  lg:size-10"/>
+    icon: <SiGooglescholar className="size-4  md:size-6  lg:size-8 "/>
   },
 
 ];
