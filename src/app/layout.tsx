@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Archivo, Noto_Sans_JP, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/custom/SideBar";
+import Navbar from "@/components/custom/NavBar";
 
 const siteUrl = "https://sbarua.netlify.app/";
 export const metadata: Metadata = {
@@ -53,7 +54,15 @@ const archivo = Archivo({
   display: 'swap' // <-- here
 })
 
-
+const linksData = [
+  { href: "#persona", label: "Persona", delay: 0.1, id: "persona" },
+  { href: "#professional-experience", label: "Professional <br/> Exp.", delay: 0.2, id: "professional-experience" },
+  { href: "#prestige", label: "Prestige", delay: 0.3, id: "prestige" },
+  { href: "#projects ", label: "Projects", delay: 0.4, id: "projects" },
+  { href: "#professional-development", label: "Professional <br/> Development ", delay: 0.5, id: "professional-development" },
+  { href: "#participation-presentations", label: "Participation <br/> & <br/> Presentations ", delay: 0.6, id: "participation-presentations" },
+  { href: "#contact", label: "Contact ", delay: 0.7, id: "contact" },
+];
 export default function RootLayout({
   children,
 }: Readonly<{
