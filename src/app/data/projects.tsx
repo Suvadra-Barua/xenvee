@@ -137,30 +137,60 @@ const projects = [
     imgSrc: "project-imgs/Tempo.png",
     code: "https://www.github.com",
     projectLink: "https://www.hellotempo.com/",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
+    tech: [
+      "Web3.js",
+      "Node.js",
+      "Solidity",
+      "Chainlink",
+      "Probable",
+      "Redstone",
+    ],
     description:
-      "A project designed to facilitate membership services for electric bike owners",
+      "Tempo is an electric bicycle (ebike) initiative that promotes the use of ebikes for transportation while prioritizing the safety of riders and the well-being of the community and the environment. The goal of Tempo is to create a united community of ebike riders, fostering a safer, more dependable, and increasingly popular mode of transportation. Through this, they aim to enable people to enjoy the exhilaration and freedom of traveling to their desired destinations on ebikes.",
     modalContent: (
       <>
         <p>
-          Conducted research on various oracle systems, including Chainlink,
+          - Conducted research on various oracle systems, including Chainlink,
           RedStone, and Band, to select the most suitable oracle platform for
           Tempo.
         </p>
         <p>
-          Engaged in the development of both oracle and reverse oracle
+          - Engaged in the development of both oracle and reverse oracle
           solutions.
         </p>
-        <p>Designed and implemented application-based oracle functionality.</p>
+        <p>
+          - Designed and implemented application-based oracle functionality.
+        </p>
+        <p>- Collaborated on contract-level development</p>
+      </>
+    ),
+  },
+  {
+    title: "Trading Beaks",
+    imgSrc: "project-imgs/Trading-breaks.png",
+    code: "https://www.github.com",
+    projectLink: "https://www.youtube.com/watch?v=Vl6f2qcovMY",
+    tech: ["Blockchain", "Hardhat", " Node.js", "Solidity"],
+    description:
+      "Trading Breaks is a project that aims to create an engaging social experience leveraging game mechanics and community built on the philosophical foundations of blockchain technology to add value to the world and create Good.",
+    modalContent: (
+      <>
+        <p>
+          - Contribution to the development and deployment of smart contracts.
+        </p>
+        <p>- Participation in manual testing procedures for smart contracts.</p>
+        <p>
+          - Providing support in the integration of contracts into the frontend.
+        </p>
       </>
     ),
   },
   {
     title: "Minipay-Payroll",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc: "project-imgs/Minipay-payroll.png",
     code: "https://www.github.com",
     projectLink: "noProject",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
+    tech: ["NextJs", "PostgreSQL", "Soldity", "Celo", "Full Stack"],
     description:
       "A payroll app to manage payments for Minipay ambassadors in cUSD",
     modalContent: (
@@ -175,140 +205,34 @@ const projects = [
   },
   {
     title: "Crowdsplit",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc:
+      "https://images.squarespace-cdn.com/content/v1/655d67e137da7a11764b61df/11cbb120-ff2c-411c-a176-23fbd20559a3/favicon.ico?format=100w",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description: "A decentralized open-source crowdfunding for all creators",
+    projectLink: "https://www.ccprotocol.xyz/",
+    tech: ["Fireblocks", "DFNS", "ExpressJs", "Jest", "Payment API Service"],
+    description:
+      "A Web3 payment API service tailored for crowdfunding platforms, facilitating seamless fiat-to-token and token-to-fiat conversions through on-ramp and off-ramp solutions. It leverages a custodial wallet service to ensure secure and efficient transactions",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
         <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
+          - Integrated DFNS and Fireblocks custodial wallet service and
+          implemented various Web3 operations.
         </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
+        <p>- Conducted testing and auditing of smart contracts</p>
       </>
     ),
   },
   {
-    title: "Paint Reference 4",
-    imgSrc: "project-imgs/example-project.jpg",
+    title: "Sage",
+    imgSrc: "project-imgs/Sage.png",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
+    projectLink: "https://web3-ai-engine-demo.vercel.app/",
+    tech: ["React.js", "Smart Contracts", "Hardhat", "Ethers.js"],
+    description: "",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
-        <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Paint Reference 4",
-    imgSrc: "project-imgs/example-project.jpg",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
-    modalContent: (
-      <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
-        <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Paint Reference 4",
-    imgSrc: "project-imgs/example-project.jpg",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
-    modalContent: (
-      <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
-        <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Paint Reference 4",
-    imgSrc: "project-imgs/example-project.jpg",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Python", "FastAPI", "SQLAlchemy"],
-    description:
-      "I couldn't think of another paint reference app, so here we are. I think you get the idea, right? Use your imagination 🌈",
-    modalContent: (
-      <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
-        <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {":)"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
+        <p>- Designed and implemented tokenomics strategy.</p>
+        <p>- Developed the frontend and integrated it with smart contrcts</p>
       </>
     ),
   },

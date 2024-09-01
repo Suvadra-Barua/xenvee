@@ -61,11 +61,11 @@ const Heading = () => {
           <OutlineButton
             onClick={() =>
               window.open(
-                "https://docs.google.com/document/d/1S3fzWi2buW3EEXoMcTpjvYUi4ryt_2xBLgOc5PsDZI8/edit?usp=sharing"
+                "https://drive.google.com/file/d/1zvSpEkSG3F1aGeZLkDPRUfsUIiAc3bT4/view?usp=sharing"
               )
             }
           >
-            resume
+            Download My CV
           </OutlineButton>
           <AnimatePresence>
             {true && (

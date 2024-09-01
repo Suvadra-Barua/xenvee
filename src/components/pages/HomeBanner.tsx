@@ -68,7 +68,7 @@ const MyDetails = () => {
             value="research-agenda"
             className="rounded-full data-[state=active]:text-earth-500 text-sm -mx-2 md:mx-0"
           >
-            Research Agenda
+            Research Interests
           </TabsTrigger>
           <TabsTrigger
             value="education"

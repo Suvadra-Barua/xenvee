@@ -26,7 +26,7 @@ export const Projects = () => {
       className="section-wrapper pt-16 md:pt-28 md:w-[80%] w-[90%] mx-auto"
       id="projects"
     >
-      <SectionHeader title="Projects" dir="r" />
+      <SectionHeader title="Selective Projects(10)" dir="r" />
       <div className="relative">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {projects.slice(0, visibleProjects).map((project) => {
