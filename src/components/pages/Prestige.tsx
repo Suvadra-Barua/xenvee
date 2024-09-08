@@ -1,11 +1,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SectionHeader } from "../custom/SectionHeader";
 import BlurFade from "../ui/blur-fade";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 import prestigePageData from "@/app/data/prestige";
 const BLUR_FADE_DELAY = 0.04;
 const Prestige = () => {
-  const {publications,awards} = prestigePageData
+  const { publications, awards } = prestigePageData;
   return (
     <section
       id="prestige"
@@ -36,7 +36,14 @@ const Prestige = () => {
                 delay={BLUR_FADE_DELAY * 6 + index * 0.05}
               >
                 <div className="rounded-lg border text-card-foreground shadow-sm  p-4 bg-earth-50">
-                  <h3 className="font-bold">{publication.title}</h3>
+                  <h3 className="font-bold">
+                    {publication.title}{" "}
+                    <a href={publication.url}>
+                      <i>
+                        <u>[link]</u>
+                      </i>
+                    </a>
+                  </h3>
                   <div className="font-medium">{publication.authors}</div>
                   <div className="">
                     {publication.journal}, {publication.year}{" "}
