@@ -33,9 +33,32 @@ const awards = [
   `Winner | Kaptai Mathematical Olympiad, 2012`,
 ];
 
+const newsItems = [
+  {
+    id: 1,
+    description:
+      "The Silver Award went to team Universal Machine for their project titled ‘AttoEarth.’",
+    image: "https://ibtbd.net/wp-content/uploads/2022/07/ict2@3x.png",
+    date: "2022-07-07",
+    tags: ["Blockchain", "Olympiad", "Silver", "AttoEarth"],
+    link: "https://ibtbd.net/new-horizons/",
+  },
+  {
+    id: 2,
+    description:
+      "“TrioChain” of the Chittagong University of Engineering and Technology (CUET) bagged the bronze.",
+    image: "https://www.bracu.ac.bd/sites/default/files/news-image/1_10.jpg",
+    date: "2021-03-07",
+    tags: ["Blockchain", "Olympiad", "Broze", "TrioChain", "Passport"],
+    link: "https://www.bracu.ac.bd/news/blockchain-olympiad-bangladesh-2021-held",
+  },
+  // Add more news items as needed
+];
+
 const prestigePageData = {
   publications,
   awards,
+  newsItems,
 };
 
 export default prestigePageData;
