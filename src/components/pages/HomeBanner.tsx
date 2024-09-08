@@ -15,8 +15,8 @@ const HomeBanner = () => {
       </div>
       <div className="relative lg:w-2/5 flex justify-center lg:justify-end  items-center order-1 lg:order-2">
         <Image
-          className="rounded-full border-4 border-dotted border-black bg-earth-300 md:mt-20"
-          src="/Suvadra_cool.png"
+          className="rounded-full border-4 border-black bg-earth-300 md:mt-20"
+          src="/Suvadra2.jpeg"
           alt="Suvadra Barua"
           width={300}
           height={300}
