@@ -1,7 +1,7 @@
 const professional_work = [
   {
     company: "Universal Machine Inc.",
-    href: "https://atomic.finance",
+    href: "https://universalmachine.io/",
     badges: [],
     location: "Silicon Valley, California",
     title: "Blockchain Engineer",
@@ -20,7 +20,7 @@ const professional_work = [
   },
   {
     company: "Creative Crowdfunding Protocol",
-    href: "https://splunk.com",
+    href: "https://www.ccprotocol.xyz/",
     badges: [],
     location: "USA",
     title: "Software Engineer",
@@ -33,7 +33,7 @@ const professional_work = [
   },
   {
     company: "Silicon Orchard Ltd.",
-    href: "https://splunk.com",
+    href: "https://www.siliconorchard.com/",
     badges: [],
     location: "Dhaka, Bangladesh",
     title: "Blockchain Intern",
@@ -45,7 +45,7 @@ const professional_work = [
   },
   {
     company: "BJIT Ltd",
-    href: "https://li.me/",
+    href: "https://bjitgroup.com/",
     badges: [],
     location: "Dhaka, Bangladesh",
     title: "Trainee Engineer",
@@ -86,7 +86,7 @@ const teaching_Experince = [
   },
   {
     company: "CUET Computer Club",
-    href: "https://nvidia.com/",
+    href: "https://www.cuet.ac.bd/computer-club",
     badges: [],
     location: " Chattogram, Bangladesh",
     title: "Workshop Instructor",
