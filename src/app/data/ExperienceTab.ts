@@ -13,11 +13,10 @@ const professional_work = [
 <li>Facilitated Front End integration with Smart Contracts</li>
 <li>Developed Smart Contracts with Solidity (ERC20, ERC721, ERC777, ERC1155)</li>
 <li>Led the smart contract development for issuing governance tokens & infrastructure</li>
-<li>Implement staking token based on ERC20 standard</li>
 <li>Proposed architectural improvements in blockchain projects</li>
 <li>Audited & assessed smart contracts for adherence to security standards (SWC Registry)</li>
 <li>Designed & developed crypto accounting application for Celo with multiple wallet integrations</li>
-<li>Engaged in full-stack development (frontend, backend, and Web3), demonstrating versatility and a commitment to mastering new technologies in the blockchain space.</li>`,
+<li>Engaged in full-stack development (frontend, backend, and Web3).</li>`,
   },
   {
     company: "Creative Crowdfunding Protocol",
