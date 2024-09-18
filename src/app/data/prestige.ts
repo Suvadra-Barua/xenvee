@@ -21,15 +21,15 @@ const publications = [
   // Add more publications as needed
 ];
 const awards = [
-  `<div><b>Silver Award | Professional Category | Blockchain Olympiad Bangladesh, 2022 </b><a href="https://bcolbd.org/2022/winner"><u>[link]</u></a>
+  `<div><b>Silver Award | Professional Category | Blockchain Olympiad Bangladesh, 2022 </b><a href="https://bcolbd.org/2022/winner" target="_blank"><u>[link]</u></a>
   <div>Project : AttoEarth - Solving Land Disputes at a High Precision</div>
   Role: Blockchain Engineer</div>`,
-  `<div><b>Bronze Award | Student Category | Blockchain Olympiad Bangladesh, 2021</b> <a href="https://bcolbd.org/2021/winner"><u>[link]</u></a>
+  `<div><b>Bronze Award | Student Category | Blockchain Olympiad Bangladesh, 2021</b> <a href="https://bcolbd.org/2021/winner" target="_blank"><u>[link]</u></a>
   <div>Project : TrioChain -  A Blockchain Based Passport Management System for Bangladesh</div>
   Role: Team Leader</div>`,
   `Merit Award | Student Category | International  Blockchain Olympiad Bangladesh, 2021`,
   `Technical Scholarship | Chittagong University of Engineering and Technology (CUET) ,2014-2018`,
-  `Secondary School Certificate (SSC) Scholarship Award | Bangladesh Education Board, 2013-2015 <a href="https://bangladeshresults.files.wordpress.com/2014/03/ssc-scholarship-2013-chittagong-board.pdf"><u>[link]</u></a>`,
+  `Secondary School Certificate (SSC) Scholarship Award | Bangladesh Education Board, 2013-2015 <a href="https://bangladeshresults.files.wordpress.com/2014/03/ssc-scholarship-2013-chittagong-board.pdf" target="_blank"><u>[link]</u></a>`,
   `Winner | Kaptai Mathematical Olympiad, 2012`,
 ];
 

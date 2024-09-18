@@ -72,7 +72,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${archivo.className} md:grid md:grid-cols-[140px_1fr] bg-earth-100`}>
         <SideBar/>
-        {children}</body>
+        {children}
+        <Script
+          type="text/javascript"
+          id="clustrmaps"
+          src="//clustrmaps.com/map_v2.js?d=VPaLXO8OyuVbwtO_v4FjlTRjvtpH_Yn8XU1XmyuBk98&cl=ffffff&w=a"
+        />
+        </body>
     </html>
   );
 }
