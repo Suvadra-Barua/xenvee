@@ -61,7 +61,7 @@ const Heading = () => {
           <OutlineButton
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1Vks8fwjH-Tj_ySv2ZDK6vL2a71nCxJn3/view?usp=sharing"
+                "https://docs.google.com/document/d/1y3rkbEcE7jTRt4Xx9uEQQzv0WHrjBOzmKRzNfF8pw0w/edit?usp=sharing"
               )
             }
           >

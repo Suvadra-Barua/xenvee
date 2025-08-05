@@ -131,11 +131,25 @@ const volunteer_experience = [
     description: ``,
   },
 ];
-
+const research_experience = [
+  {
+    company:
+      "Software Reliability and Security (SRest) Lab , University at Buffalo",
+      badges: [],
+    href: "",
+    location: "",
+    logoUrl: "/shopify.svg",
+    title: "Research Intern",
+    start: "Jun 2025",
+    end: "Ongoing",
+    description: `Conducting research at the intersection of Programming Languages and Software Security.`,
+  },
+];
 const ExpericenTabPageData = {
   professional_work,
   teaching_Experince,
   volunteer_experience,
+  research_experience,
 };
 
 export default ExpericenTabPageData;
