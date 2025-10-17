@@ -56,7 +56,7 @@ const MyDetails = () => {
         defaultValue="about-me"
         className="md:mx-auto text-sm md:text-base h-full"
       >
-        <TabsList className="grid w-full  my-4 md:w-3/4 mx-auto grid-cols-3 bg-earth-500 text-white/50 rounded-full">
+        <TabsList className="grid w-full  my-4 md:w-3/4 mx-auto grid-cols-2 bg-earth-500 text-white/50 rounded-full">
           <TabsTrigger
             value="about-me"
             className=" rounded-full data-[state=active]:text-earth-500 text-sm "
@@ -64,12 +64,12 @@ const MyDetails = () => {
             {" "}
             About Me
           </TabsTrigger>
-          <TabsTrigger
+          {/* <TabsTrigger
             value="research-agenda"
             className="rounded-full data-[state=active]:text-earth-500 text-sm -mx-2 md:mx-0"
           >
             Research Interests
-          </TabsTrigger>
+          </TabsTrigger> */}
           <TabsTrigger
             value="education"
             className="rounded-full data-[state=active]:text-earth-500 text-sm "
@@ -85,14 +85,14 @@ const MyDetails = () => {
             </article>
           </TabDeatils>
         </TabsContent>
-        <TabsContent value="research-agenda">
+        {/* <TabsContent value="research-agenda">
           <TabDeatils>
             {" "}
             <article className="text-sm md:text-base text-black/90 text-justify">
               {parse(researchAgenda)}
             </article>
           </TabDeatils>
-        </TabsContent>
+        </TabsContent> */}
         <TabsContent value="education">
           <TabDeatils>
             {" "}

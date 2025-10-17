@@ -1,4 +1,4 @@
-import Contact from "@/components/custom/Contact";
+// import Contact from "@/components/custom/Contact";
 import { SectionHeader } from "../custom/SectionHeader";
 
 export default function ContactSection() {
@@ -110,12 +110,12 @@ export default function ContactSection() {
             </li>
           </ul>
         </div>
-        <div className=" h-fit self-center" id="form">
+        {/* <div className=" h-fit self-center" id="form">
           <h2 className="mb-4 text-2xl font-bold dark:text-white">
             Ready to Get Started?
           </h2>
-          <Contact />
-        </div>
+          {/* <Contact /> */}
+        {/* </div>  */}
       </div>
     </section>
   );

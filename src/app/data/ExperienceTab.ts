@@ -4,11 +4,11 @@ const professional_work = [
     href: "https://universalmachine.io/",
     badges: [],
     location: "Silicon Valley, California",
-    title: "Blockchain Engineer",
+    title: "Software Engineer",
     logoUrl: "/atomic.png",
     start: "November 2021",
     end: "Running",
-    description: `<li>Designed, developed & shipped several projects related to NFT, Blockchain & Web3</li>
+    description: `<li>Designed, developed & shipped several projects related to Blockchain & Web3</li>
 <li>Implemented smart contracts with a focus on maintainability, usability, scalability, and performance</li>
 <li>Facilitated Front End integration with Smart Contracts</li>
 <li>Developed Smart Contracts with Solidity (ERC20, ERC721, ERC777, ERC1155)</li>
@@ -27,7 +27,8 @@ const professional_work = [
     logoUrl: "/splunk.svg",
     start: "Nov 2023 ",
     end: "Running",
-    description: `<li>Conducted research on various on-ramp and off-ramp platforms to select the most suitable one for our project</li>
+    description: `<li>Developed the backend for the payment gateways(Stripe,Bridge etc.), providing APIs for operations related to custodial wallets.
+</li>
 <li>Tested smart contracts and implemented a frontend for demonstration purposes</li>
 <li>Developed the backend for the wallet service, providing APIs for operations related to custodial wallets</li>`,
   },
