@@ -1,35 +1,44 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
       colors: {
-        earth: {
-          50: '#f5f3f0',
-          100: '#e0d8d0',
-          200: '#c2b3a2',
-          300: '#a48e74',
-          400: '#85694b',
-          500: '#694832', // Default earth color
-          600: '#523c28',
-          700: '#3c2e1e',
-          800: '#27201b',
-          900: '#120d09',
+        ink: {
+          50: "#f8f8f7",
+          100: "#eeeeec",
+          200: "#d9d9d5",
+          300: "#b3b3ac",
+          400: "#8a8a82",
+          500: "#5f5f58",
+          600: "#3f3f3a",
+          700: "#2a2a26",
+          800: "#1a1a17",
+          900: "#0f0f0d",
+        },
+        accent: {
+          DEFAULT: "#c2410c",
+          soft: "#fef2ec",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -52,22 +61,10 @@ const config = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
-      gridTemplateColumns: {
-        'auto-fill-100': 'repeat(auto-fill, minmax(100px, 1fr))',
-        'auto-fit-100': 'repeat(auto-fit, minmax(100px, 1fr))',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,14 +80,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(8px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.5s ease-out both",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
