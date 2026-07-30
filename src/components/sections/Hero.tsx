@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { SiGooglescholar } from "react-icons/si";
 import profile from "@/app/data/profile";
 
 const Hero = () => {
@@ -72,6 +73,15 @@ const Hero = () => {
             >
               <FiLinkedin size={14} />
               LinkedIn
+            </a>
+            <a
+              href={profile.googleScholar}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-ink-300 px-4 py-2 text-sm text-ink-800 transition-colors hover:border-ink-900"
+            >
+              <SiGooglescholar size={14} />
+              Scholar
             </a>
           </div>
         </div>

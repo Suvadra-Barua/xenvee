@@ -20,7 +20,7 @@ const profile = {
   github: "https://github.com/Suvadra-Barua",
   linkedin: "https://www.linkedin.com/in/Suvadra-Barua",
   googleScholar: "https://scholar.google.com/citations?user=Suvadra-Barua",
-  bio: `I build and study software at the intersection of programming languages, security, and blockchain systems. My current work spans automated benchmarking for LLM-generated code, secure smart contracts, and Web3 payment infrastructure. Over the past four years I have shipped production smart contracts, custodial payment APIs, and full-stack applications used by millions of people, while contributing peer-reviewed research and mentoring the next generation of blockchain developers.`,
+  bio: `I love building software that's secure and easy to use — and researching what it takes to get there.`,
   education: [
     {
       degree: "B.Sc. in Computer Science and Engineering",
