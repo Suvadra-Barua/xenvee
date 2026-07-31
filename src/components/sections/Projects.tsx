@@ -7,31 +7,32 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const INITIAL = 4;
 
-const Projects = () => {
-  const [showAll, setShowAll] = useState(false);
-  const visible = showAll ? projects : projects.slice(0, INITIAL);
+type Props = { hideTitle?: boolean; showAll?: boolean };
+
+const Projects = ({ hideTitle = false, showAll = false }: Props) => {
+  const [expanded, setExpanded] = useState(showAll);
+  const visible = expanded ? projects : projects.slice(0, INITIAL);
+  const canToggle = !showAll && projects.length > INITIAL;
 
   return (
-    <section id="projects" className="scroll-mt-20 pt-20">
-      <SectionTitle
-        index="03"
-        title="Selected Projects"
-        subtitle={`${projects.length} shipped projects across Web3, payments, and applied research`}
-      />
+    <section id="projects" className="scroll-mt-20 pt-2">
+      {!hideTitle && <SectionTitle title="Selected Projects" />}
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {visible.map((p) => (
           <article
             key={p.title}
             className="card-plain flex h-full flex-col p-5"
           >
             <div className="flex items-start justify-between gap-3">
-              <div>
-                <h3 className="font-serif text-xl text-ink-900">{p.title}</h3>
+              <div className="min-w-0">
+                <h3 className="font-serif text-lg font-medium tracking-tight text-ink-900">
+                  {p.title}
+                </h3>
                 <p className="mt-0.5 text-sm text-ink-600">{p.tagline}</p>
               </div>
               {p.year && (
-                <span className="whitespace-nowrap font-mono text-[11px] text-ink-500">
+                <span className="shrink-0 whitespace-nowrap font-mono text-[11px] text-ink-500">
                   {p.year}
                 </span>
               )}
@@ -88,13 +89,13 @@ const Projects = () => {
         ))}
       </div>
 
-      {projects.length > INITIAL && (
+      {canToggle && (
         <div className="mt-6 flex justify-center">
           <button
-            onClick={() => setShowAll(!showAll)}
+            onClick={() => setExpanded(!expanded)}
             className="rounded-md border border-ink-300 px-4 py-2 font-mono text-xs text-ink-700 transition-colors hover:border-ink-900 hover:text-ink-900"
           >
-            {showAll
+            {expanded
               ? "Show fewer projects"
               : `Show all ${projects.length} projects`}
           </button>

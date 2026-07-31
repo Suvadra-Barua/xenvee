@@ -39,7 +39,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: "ss01", "cv01", "cv02", "cv11";
+    font-feature-settings: "ss02", "ss03";
+  }
+
+  .font-mono {
+    font-feature-settings: "ss02", "zero";
   }
 
   ::selection {

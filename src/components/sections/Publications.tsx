@@ -17,31 +17,27 @@ const highlight = (authors: string, target?: string) => {
   ));
 };
 
-const Publications = () => {
+const Publications = ({ hideTitle = false }: { hideTitle?: boolean }) => {
   return (
-    <section id="publications" className="scroll-mt-20 pt-20">
-      <SectionTitle
-        index="01"
-        title="Publications"
-        subtitle="Peer-reviewed & in-submission research"
-      />
+    <section id="publications" className="scroll-mt-20 pt-2">
+      {!hideTitle && <SectionTitle title="Publications" />}
 
-      <ol className="space-y-6">
+      <ol className="border-t border-ink-100">
         {publications.map((pub, i) => (
           <li
             key={pub.title}
-            className="grid grid-cols-[auto_1fr] gap-4 border-l-2 border-ink-200 pl-4 hover:border-accent"
+            className="grid grid-cols-[32px_1fr] gap-3 border-b border-ink-100 py-5 sm:grid-cols-[40px_1fr]"
           >
             <span className="font-mono text-xs text-ink-400">
               [{String(publications.length - i).padStart(2, "0")}]
             </span>
-            <div>
+            <div className="min-w-0">
               <div className="flex flex-wrap items-baseline gap-2">
                 <h3 className="text-[15px] leading-snug text-ink-900">
                   {pub.title}
                 </h3>
                 {pub.status === "under-review" && (
-                  <span className="rounded-full border border-accent bg-accent-soft px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-accent">
+                  <span className="rounded-full border border-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-accent">
                     Under review
                   </span>
                 )}
@@ -49,7 +45,7 @@ const Publications = () => {
               <p className="mt-1 text-sm text-ink-600">
                 {highlight(pub.authors, pub.highlightAuthor)}
               </p>
-              <p className="mt-1 text-sm italic text-ink-500">
+              <p className="mt-0.5 text-sm italic text-ink-500">
                 {pub.venue}, {pub.year}
               </p>
               {pub.note && (

@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Instrument_Serif } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/custom/TopNav";
 import Footer from "@/components/custom/Footer";
 
-const inter = Inter({
+const sans = IBM_Plex_Sans({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
 });
 
-const serif = Instrument_Serif({
-  weight: ["400"],
+const serif = IBM_Plex_Serif({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
+const mono = IBM_Plex_Mono({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
@@ -49,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${serif.variable} ${mono.variable} font-sans bg-background text-foreground`}
+        className={`${sans.variable} ${serif.variable} ${mono.variable} font-sans bg-background text-foreground`}
       >
         <TopNav />
         {children}

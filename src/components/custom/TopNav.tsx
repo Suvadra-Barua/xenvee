@@ -1,46 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#publications", label: "Publications" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#talks", label: "Talks" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "About" },
+  { href: "/publications", label: "Publications" },
+  { href: "/projects", label: "Projects" },
+  { href: "/cv", label: "CV" },
 ];
 
 const TopNav = () => {
-  const [active, setActive] = useState<string>("about");
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  useEffect(() => {
-    const sections = navLinks
-      .map((l) => document.getElementById(l.href.slice(1)))
-      .filter(Boolean) as HTMLElement[];
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
-    );
-
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
-  }, []);
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-200 bg-background/80 backdrop-blur">
-      <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
+    <header className="sticky top-0 z-40 border-b border-ink-200 bg-background/85 backdrop-blur">
+      <nav className="mx-auto flex h-14 max-w-4xl items-center justify-between px-4 sm:px-6">
         <Link
-          href="#top"
+          href="/"
           className="font-mono text-sm font-semibold tracking-tight text-ink-900"
         >
           suvadra<span className="text-accent">.</span>barua
@@ -49,16 +31,16 @@ const TopNav = () => {
         <ul className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className={`text-sm transition-colors ${
-                  active === link.href.slice(1)
+                  isActive(link.href)
                     ? "text-ink-900"
                     : "text-ink-500 hover:text-ink-900"
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -67,6 +49,7 @@ const TopNav = () => {
           className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
         >
           <svg
             width="20"
@@ -86,17 +69,19 @@ const TopNav = () => {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-ink-200 bg-background">
-          <ul className="flex flex-col px-6 py-4">
+        <div className="border-t border-ink-200 bg-background md:hidden">
+          <ul className="flex flex-col px-4 py-2 sm:px-6">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
-                  className="block py-2 text-sm text-ink-700"
                   onClick={() => setMobileOpen(false)}
+                  className={`block py-2 text-sm ${
+                    isActive(link.href) ? "text-ink-900" : "text-ink-600"
+                  }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

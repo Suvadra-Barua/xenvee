@@ -14,14 +14,14 @@ const tabs: { key: TabKey; label: string }[] = [
 ];
 
 const Row = ({ item }: { item: ExperienceItem }) => (
-  <li className="grid grid-cols-1 gap-4 border-b border-ink-100 py-6 last:border-0 md:grid-cols-[160px_1fr]">
+  <li className="grid grid-cols-1 gap-2 border-b border-ink-100 py-5 last:border-0 sm:grid-cols-[140px_1fr] md:grid-cols-[160px_1fr]">
     <div className="font-mono text-xs text-ink-500">
       {item.start} — {item.end}
       {item.type && (
         <span className="mt-1 block text-[11px] text-ink-400">{item.type}</span>
       )}
     </div>
-    <div>
+    <div className="min-w-0">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="text-[15px] text-ink-900">{item.role}</h3>
         {item.location && (
@@ -45,7 +45,7 @@ const Row = ({ item }: { item: ExperienceItem }) => (
           item.org
         )}
       </p>
-      <ul className="mt-3 list-disc space-y-1.5 pl-4 text-sm leading-relaxed text-ink-600 marker:text-ink-300">
+      <ul className="mt-2 list-disc space-y-1 pl-4 text-sm leading-relaxed text-ink-600 marker:text-ink-300">
         {item.bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}
@@ -59,25 +59,21 @@ const Experience = () => {
   const items = allExperience[active];
 
   return (
-    <section id="experience" className="scroll-mt-20 pt-20">
-      <SectionTitle
-        index="02"
-        title="Experience"
-        subtitle="Research, industry, and teaching"
-      />
+    <section id="experience" className="scroll-mt-20 pt-2">
+      <SectionTitle title="Experience" />
 
       <div
-        className="mb-6 inline-flex rounded-md border border-ink-200 bg-white p-0.5"
+        className="mb-4 flex flex-wrap items-center gap-4 overflow-x-auto border-b border-ink-200 pb-0"
         role="tablist"
       >
         {tabs.map((t) => (
           <button
             key={t.key}
             onClick={() => setActive(t.key)}
-            className={`rounded px-3 py-1.5 font-mono text-xs transition-colors ${
+            className={`-mb-px shrink-0 border-b-2 pb-2 font-mono text-xs transition-colors ${
               active === t.key
-                ? "bg-ink-900 text-ink-50"
-                : "text-ink-600 hover:text-ink-900"
+                ? "border-ink-900 text-ink-900"
+                : "border-transparent text-ink-500 hover:text-ink-900"
             }`}
           >
             {t.label}
@@ -85,7 +81,7 @@ const Experience = () => {
         ))}
       </div>
 
-      <ul className="rounded-lg border border-ink-200 bg-white px-6">
+      <ul>
         {items.map((item) => (
           <Row key={`${item.org}-${item.role}-${item.start}`} item={item} />
         ))}
